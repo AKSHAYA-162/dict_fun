@@ -1,0 +1,17 @@
+# function to print frequency of the string
+
+def most_frequency(str1):
+    dict = {}
+    for n in str1:
+        keys = dict.keys()
+        if n in keys:
+            dict[n] += 1
+        else:
+            dict[n] = 1
+    for x, y in dict.items():
+      print(x, "=",y)
+    return dict
+
+
+str1 = (input("Please enter a string : "))
+most_frequency(str1)
